@@ -1,0 +1,409 @@
+/*
+Theme Name: Blogsonry
+Author: Mark Root-Wiley / MRW Web Design
+Author URI: http://MRWweb.com
+Description: A child theme of Twenty Thirteen with a masonry layout on the blog and archive pages. Just like Twenty Thirteen, this theme really makes Post Formats shine. Supports Jetpack Infinite Scroll (and responsive videos) if Jetpack is installed and Infinite Scroll Module is enabled. Behind the scenes, this updates Twenty Thirteen to Masonry 3 while we're at it. Originally designed & developed for FoodCorps.
+Version: 1.0.5
+Template: twentythirteen
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready, accessibility-ready
+Text Domain: blogsonry
+
+Blogsonry Copyright (C) 2014 Mark Root-Wiley
+Blogsonry, like WordPress, is licensed and distributed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/****************************************************************
+ * Minor Layout Tweaks
+ ****************************************************************/
+
+/* Masonry Layout */
+@media screen and (min-width:601px) {
+	.masonry .site-content {
+		margin: 30px;
+	}
+}
+.masonry .site-content article {
+	float: left;
+	width: 100%;
+	min-width: 275px;
+	margin: 0;
+	padding: 2rem;
+}
+@media screen and (min-width:601px) {
+	.masonry .site-content article {
+		width: 47%;
+		margin: 0 1.5% 20px;
+	}
+}
+@media screen and (min-width:1000px) {
+	.masonry .site-content article {
+		width: 30.3%;
+		margin-bottom: 40px;
+	}
+}
+
+/****************************************************************
+ * Minor Styling Tweaks
+ ****************************************************************/
+/* Give white bg boxes some definition*/
+.masonry .site-content article {
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+	.masonry .format-aside:first-of-type,
+	.masonry .format-link:first-of-type,
+	.masonry .format-aside + .format-aside,
+	.masonry .format-aside + .format-link,
+	.masonry .format-link + .format-aside { /* weird exceptions */
+		box-shadow: inset 0 2px 2px rgba(173, 165, 105, 0.2),
+					0 0 3px rgba(0,0,0,.3);
+	}
+
+/* Tame the font-size*/
+.masonry .site-content .entry-title {
+	font-size: 24px;
+	word-break: break-word; /* handle long words in title */
+}
+
+/* Set explicit background on white bg posts & widgets */
+.format-standard,
+.format-image,
+.format-link,
+.format-aside,
+.widget,
+.comment-respond {
+	background-color: #fff;
+}
+
+/* Self-explanatory? */
+.archive-header,
+.paging-navigation {
+	margin-bottom: 30px;
+}
+
+/* Negative margins? Not so much here. */
+.masonry .entry-content img.alignleft,
+.masonry .entry-content .wp-caption.alignleft {
+	margin-left: 0;
+}
+.masonry .entry-content img.alignright,
+.masonry .entry-content .wp-caption.alignright {
+	margin-right: 0;
+}
+
+/* Allow entry-* in widgets to not bork */
+.sidebar .widget .entry-header,
+.sidebar .widget .entry-content,
+.sidebar .widget .entry-summary,
+.sidebar .widget .entry-meta {
+	padding: 0;
+}
+
+/* Clearing Stuff */
+.paging-navigation {
+	clear: both;
+}
+.masonry .site-content:before {
+	clear: both;
+}
+.masonry .site-content:before,
+.masonry .site-content:after {
+	content: "";
+	display: table;
+}
+/****************************************************************
+ * Johns changes
+ ****************************************************************/
+
+
+.navbar {
+	font-family: Helvetica, sans-serif;
+}
+.nav-menu li a {
+	font-size: 18px;
+	color: #000;
+}
+.widget_text {
+	background: #eaeaea;
+}
+.widget-title {
+	font-weight: bold!important;
+}
+.home-link {
+	/*background: url('http://bst.seasiderspodcast.co.uk/wp-content/uploads/2015/06/bst-logo-trans.png') no-repeat 34px 30px;*/
+	text-align: center;
+}
+.site-title {
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  /* padding: 58px 0 7px; */
+  /* padding: 70px 0 0 204px; */
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+h1.site-title  {
+	font-size: 56px!important;
+}
+.homelink h2 {
+	color: #;
+}
+.site-header .home-link {
+	max-width: none;
+}
+h1.entry-title {
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+.entry-summary p {
+	font-size: 18px;
+	line-height: 1.3;
+	margin-bottom: 0;
+}
+.entry-content {
+	font-size: 20px;
+}
+.entry-header {
+	margin-bottom: 0;
+}
+.site-main {
+	background: white;
+    overflow: hidden;
+}
+.masonry .site-content article {
+	padding: 0;
+	box-shadow: none;
+}
+.masonry h1.entry-title, .masonry p {
+	margin: 0 0.8rem;
+}
+.masonry h1.entry-title {
+	margin-top: 8px;
+}
+.masonry p {
+	margin-bottom: 8px;
+} 
+.masonry .entry-thumbnail img {
+	margin: 0;
+}
+.nav-menu .sub-menu, .nav-menu .children {
+	border: none;
+}
+.header-meta {
+	background: #232533;
+	overflow: hidden;
+
+}
+.header-meta a {
+	text-decoration: none;
+	color: white;
+}
+.header-meta a.email {
+	
+}
+.header-meta a.login {
+	float: right;
+	padding-left: 8px;
+}
+.header-meta a.join {
+	float: right;
+	padding-right: 8px;
+	border-right: 1px solid white;
+}
+
+.quotes {
+	background: #FAF1DC;
+	padding: 3em;
+	text-align: center;
+	overflow: hidden;
+}
+.quotes h2 {
+	font-family: 'Droid Sans Mono';
+	padding: 0 0.6em;
+	font-size: 28px;
+	margin-bottom: 0;
+	color: black;
+}
+.quotes h2::before, .quotes h2::after  {
+	content: "\0022";
+}
+.quotes h2 span {
+	font-weight: bold;	
+	font-size: 28px;
+}
+.quotes h3 {
+	margin-top: 10px;
+	font-weight: normal;
+	font-size: 24px;
+		color: rgb(94, 68, 9);
+}
+.quotes p {
+	font-size: 18px;
+	font-family: 'Droid Sans', sans-serif;
+	margin-bottom: 1em;
+}
+.content-area {
+	padding-top: 40px;
+}
+.news {
+	position: relative;
+}
+.masonry .site-content {
+	margin: 0;
+}
+.intro {
+	background: #fdfaf4;
+	text-align: center;
+	overflow: hidden;
+}
+.intro img {
+	margin-top: 70px;
+}
+.intro > p {
+	font-size: 28px;
+	width: 70%; 
+	margin: 0 auto 40px auto;
+}
+.intro li {
+	font-size: 24px;
+	display: inline;
+}
+.aims {
+	text-align: left;
+}
+button {
+  padding: 10px 20px;
+  font-size: 24px;
+}
+img {
+	max-width: 100%;
+}
+.header-meta {
+	padding: 4px 24px;
+}
+.internal-page {
+	background: white;
+}
+
+/* FROM CODEPEN */
+
+.slider {
+  background: url(http://bst.seasiderspodcast.co.uk/wp-content/uploads/2015/06/bloomfieldroad1800-926.jpg);
+  padding-bottom: 20px;
+}
+
+.bst-logo {
+  text-align: center;
+  margin: 40px auto;
+  width: 70%;
+}
+.bst-logo img {
+  max-width: 80%;
+}
+
+.introBlock {
+  background: white;
+  padding: 2em;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+  background: rgba(255,255,255, 0.95);
+}
+.boxes svg {
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  display: block;
+  top: -40px;
+  fill: rgba(247, 132, 31, 1);
+}
+.boxes svg:nth-child(2) {
+	fill: white;
+	width: 44px;
+	height: 60px;
+	top: -30px;
+}
+.boxes p {
+	padding: 12px 0;
+	font-size: 22px;
+	line-height: 1.3;
+}
+.absCentre {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ #circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+a.button {
+  color: #b93207;
+  display: inline-block;
+  padding: 8px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #b93207;
+  text-transform: uppercase;
+}
+.solid {
+	color: #fff!important;
+	background: #b93207;
+}
+.main-cta {
+	background: #b93207;
+	color: white!important;
+}
+.navbar {
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+}
+.primary { background-color: rgba(247, 132, 31, 1);}
+.secondary { background-color: rgba(170, 85, 11, 1);}
+.tertiary { background-color: rgba(219, 191, 165, 1);}
+.cta {background-color: rgba(0, 140, 170, 1);}
+.cta {background-color: rgba(31, 209, 247, 1);}
+.nav-menu {
+	text-align: center;
+	text-transform: uppercase;
+}
+.nav-menu li a {
+	font-size: 16px;
+}
+.hentry {
+	padding: 0;
+}
+aside.widget:nth-child(odd)  {
+	border-top: 5px rgba(247, 132, 31, 1) solid;
+}
+aside.widget:nth-child(even)  {
+	border-top: 5px rgba(170, 85, 11, 1)solid;
+}
+.widget-title {
+	font-style: normal!important;
+	text-align: center;
+}
+.textwidget {
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+}
+.textwidget a {
+	margin-top: 12px;
+}
+.featured-image {
+	margin: 12px 0;
+}
