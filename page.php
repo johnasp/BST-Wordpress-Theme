@@ -14,18 +14,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area internal-page">
-
-		<h1 style="background:red;"  >TEST</h1>
-
 		<div id="content" class="site-content" role="main">
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-
-
-
-
-
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">

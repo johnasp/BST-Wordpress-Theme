@@ -1,3 +1,4 @@
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <?php
 /**
  * The main template file
@@ -97,7 +98,6 @@ get_header(); ?>
 
 							<?php while ( have_posts() ) : the_post(); ?>
 								<?php get_template_part( 'content', get_post_format() ); ?>
-
 							<?php endwhile; ?>
 
 					
@@ -125,10 +125,10 @@ get_header(); ?>
 					endwhile;
 					wp_reset_postdata();
 				?>
+				
 				<a href="/join/" class="button solid">Become a Member</a>
-			</div>
 
-			<?php twentythirteen_paging_nav(); ?>
+			</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

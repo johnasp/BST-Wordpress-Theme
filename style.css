@@ -481,19 +481,22 @@ aside.widget:nth-child(even)  {
 }
 .quotes a:hover {
 	background: rgba(247, 132, 31, 1);
+	border: 2px solid rgba(247, 132, 31, 1);
 }
 .quotes a {
 	margin-bottom: 24px;
 }
 footer {
-	background: black;
 	overflow: hidden;
 	color: white;
-	margin-top: 40px;
 }
 footer aside .widget {
 	background: black;
 }
 .screen-reader {
 	display: none;
+}
+.paging-navigation {
+	background: #DBBFA5;
+	margin-bottom: 0;
 }

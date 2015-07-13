@@ -13,25 +13,12 @@
 ?>
 
 		</div><!-- #main -->
-		<footer>
-			<section class="contact col-md-3">
-				<div>
-					Contact details
-				</div>
-			</section>
-			<section class="social col-md-3">
-				<div>
-					Facebook, Twitter, etc
-				</div>
-			</section>
-			<section class="legal col-md-6">
-				<div>
-					Blackpool Supporters' Trust is the trading name of Blackpool Supporters Society Limited which is registered under the Industrial and Provident Act 1965 with the registration number 32403R and is regulated by the Financial Conduct Authority.
-				</div>
-			</section>
-		</footer>
+		<footer id="colophon" class="site-footer clear" role="contentinfo">
+			<?php get_sidebar( 'main' ); ?>
+		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
+	<?php wp_footer(); ?>
 
 <svg width="0" height="0" class="screen-reader">
   <defs>
