@@ -34,14 +34,14 @@ get_header(); ?>
 
 <section class="slider container-fluid">
   <div class="bst-logo">
-  <img src="http://bst.seasiderspodcast.co.uk/wp-content/uploads/2015/06/bst-logo.png" alt="" /></div>
+  <img src="wp-content/uploads/2015/06/bst-logo.png" alt="" /></div>
   <div class="boxes row">
 
         <div class="who col-md-4">
           <div class="introBlock">
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#circle"></use></svg>
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#users"></use></svg>
-            <p>We are the <strong>Blackpool Supports Trust</strong> and we are the most democratic, representative and largest independent Blackpool FC supporters group.</p>
+            <p>We are the <strong>Blackpool Supporters' Trust</strong> and we are the most democratic, representative and largest independent Blackpool FC supporters group.</p>
             <a href="/join/" class="button">Become a member</a>
           </div>
         </div>

@@ -125,8 +125,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	font-size: 18px;
 	color: #000;
 }
-.widget_text {
-	background: #eaeaea;
+.widget {
+	background: #f1f1f1;
 }
 .widget-title {
 	font-weight: bold!important;
@@ -197,50 +197,55 @@ h1.entry-title {
 .header-meta {
 	background: #232533;
 	overflow: hidden;
-
 }
-.header-meta a {
+.header-meta a.bst-text {
+	display: inline-block;
 	text-decoration: none;
+	margin: 6px 0;
 	color: white;
+	font-size: 28px;
+	letter-spacing: 1px;
 }
-.header-meta a.email {
-	
-}
-.header-meta a.login {
-	float: right;
-	padding-left: 8px;
+@media screen (min-width: 768px) {
+	.header-meta a.bst-text {
+	  font-size: 16px!important;
+	  letter-spacing: 0px;
+	}	
 }
 .header-meta a.join {
 	float: right;
-	padding-right: 8px;
-	border-right: 1px solid white;
+	padding: 8px 16px;
+	border: 1px solid rgb(255, 193, 81);
+	color: rgb(255, 193, 81);
+	margin: 6px 0;
+	letter-spacing: 2px;
 }
-
+.header-meta a.join:hover {
+	text-decoration: none;
+	background: rgb(255, 193, 81);
+	color: white;
+}
 .quotes {
 	background: #FAF1DC;
-	padding: 3em;
+	padding: 20px;
 	text-align: center;
 	overflow: hidden;
 }
 .quotes h2 {
 	font-family: 'Droid Sans Mono';
 	padding: 0 0.6em;
-	font-size: 28px;
+	font-size: 26px;
 	margin-bottom: 0;
 	color: black;
 }
 .quotes h2::before, .quotes h2::after  {
 	content: "\0022";
 }
-.quotes h2 span {
-	font-weight: bold;	
-	font-size: 28px;
-}
 .quotes h3 {
 	margin-top: 10px;
 	font-weight: normal;
-	font-size: 24px;
-		color: rgb(94, 68, 9);
+	font-size: 22px;
+	color: rgb(94, 68, 9);
 }
 .quotes p {
 	font-size: 18px;
@@ -293,7 +298,7 @@ img {
 /* FROM CODEPEN */
 
 .slider {
-  background: url(http://bst.seasiderspodcast.co.uk/wp-content/uploads/2015/06/bloomfieldroad1800-926.jpg);
+  background: url(/wp-content/uploads/2015/06/bloomfieldroad1800-926.jpg);
   padding-bottom: 20px;
 }
 
@@ -310,7 +315,7 @@ img {
   background: white;
   padding: 2em;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 46px;
   text-align: center;
   background: rgba(255,255,255, 0.95);
 }
@@ -376,7 +381,6 @@ a.button {
 .cta {background-color: rgba(0, 140, 170, 1);}
 .cta {background-color: rgba(31, 209, 247, 1);}
 .nav-menu {
-	text-align: center;
 	text-transform: uppercase;
 }
 .nav-menu li a {
@@ -397,13 +401,110 @@ aside.widget:nth-child(even)  {
 }
 .textwidget {
 	text-align: center;
-	font-size: 18px;
-	line-height: 1.3em;
+	line-height: 1.4em;
 	margin-bottom: 10px;
+}
+.widget a, .widget li, .widget p {
+	font-size: 17px!important;
 }
 .textwidget a {
 	margin-top: 12px;
 }
 .featured-image {
 	margin: 12px 0;
+}
+.entry-meta {
+	margin-bottom: 6px;
+}
+.entry-meta a {
+	font-size: 18px!important;
+}
+.widget ul {
+  list-style-type: square;
+  margin-left: 12px;	
+}
+.archive #content {
+	background: rgba(219, 191, 165, 1);
+}
+.archive .content-area, .search .content-area {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.archive-title {
+	font-size: 26px;
+}
+.search-results h2 {
+	font-size: 24px;
+}
+.search-results h2 {
+	margin-bottom: 2px;
+}
+.search-results p {
+	font-size: 18px;
+}
+.archive-header, .paging-navigation {
+	background: #FFFCE2;
+}
+#secondary .widget-title, #secondary .textwidget {
+	text-align: left;
+}
+ #secondary .textwidget { 
+ 	font-size: 18px;
+ 	line-height: 1.2;
+ }
+ .category-home {
+	position: absolute;
+  	top: 0;
+  	right: 0;
+	background: rgba(247, 132, 31, 0.9);
+  	color: white!important;
+ }
+ .category-home a { 
+ 	color: white;
+  	text-transform: uppercase;
+    padding: 6px;
+}
+.the-date {
+	color: #999;
+	padding-left: 12px;
+	font-size: 18px;
+}
+.main-navigation {
+	max-width: none;
+}
+.header-meta {
+	padding-left: 16px;
+}
+.boxes a:hover {
+	background: #b93207;
+	color: white;
+}
+.quotes a:hover {
+	background: rgba(247, 132, 31, 1);
+	border: 2px solid rgba(247, 132, 31, 1);
+}
+.quotes a {
+	margin-bottom: 24px;
+}
+footer {
+	overflow: hidden;
+	color: white;
+}
+footer aside .widget {
+	background: black;
+}
+.screen-reader {
+	display: none;
+}
+.paging-navigation {
+	background: #DBBFA5;
+	margin-bottom: 0;
+	padding: 30px 0 30px 0;
+}
+.nav-previous .meta-nav, .nav-next .meta-nav {
+	padding: 0!important;
+	width: 42px!important;
+}
+.paging-navigation .nav-next {
+	padding: 0;
 }
