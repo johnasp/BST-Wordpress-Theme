@@ -42,7 +42,7 @@ get_header(); ?>
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#circle"></use></svg>
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#users"></use></svg>
             <p>We are the <strong>Blackpool Supporters' Trust</strong> and we are the most democratic, representative and largest independent Blackpool FC supporters group.</p>
-            <a href="/join/" class="button">Become a member</a>
+            <a href="/join/">Become a member</a>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ get_header(); ?>
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#circle"></use></svg>
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#tick"></use></svg>
             <p>We have several aims, including fan representation at board level, holding whomever owns the club to account and ultimately fan majority ownership of BFC.</p>
-            <a href="/about/" class="button">About BST</a>
+            <a href="/about/">About Us</a>
           </div>
         </div>
      
@@ -60,7 +60,7 @@ get_header(); ?>
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#circle"></use></svg>
             <svg viewBox="0 0 512 512" class="absCentre"><use xlink:href="#thumb"></use></svg>
             <p>We are delighted to have partnerships with several organisations and companies who offer our members discounts on their products and services.</p>
-            <a href="/partners-sponsors/" class="button">Our Partners</a>
+            <a href="/partners-sponsors/">Our Partners</a>
           </div>
         </div>
     </div> 
@@ -84,7 +84,7 @@ get_header(); ?>
 					wp_reset_postdata();
 				?>
 				
-				<a href="/join/" class="button solid">Become a Member</a>
+				<a href="/join/" class="">Become a Member</a>
 			</div>
 
 			<!-- MASONRY NEWS -->
@@ -125,7 +125,7 @@ get_header(); ?>
 					endwhile;
 					wp_reset_postdata();
 				?>
-				<a href="/join/" class="button solid">Become a Member</a>
+				<a href="/join/">Become a Member</a>
 			</div>
 
 			<?php twentythirteen_paging_nav(); ?>

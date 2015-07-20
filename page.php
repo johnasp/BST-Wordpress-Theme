@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area internal-page">
 		<div id="content" class="site-content" role="main">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
