@@ -23,7 +23,7 @@ Template Name: Membership
 						} 
 						?>		
 					</div>
-					</header><!-- .entry-header -->
+					</header><!-- .entry-header --> 
 
 					<div class="entry-content">
 						<?php the_content(); ?>

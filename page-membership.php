@@ -6,19 +6,22 @@ Template Name: Membership
 
 <?php get_header(); ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
+	<div class="internal-page" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-		</header>
+		<?php if ( have_posts() ) : ?>
 
-		<div>
-			<?php the_content(); ?>
-		</div>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<h1><?php the_title() ?></h1>
+				<section>
+					<div class="featured"><?php the_post_thumbnail('full'); ?></div>
+					<?php the_content() ?>
+				</section>
+			<?php endwhile; ?>
 
-	</article>
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+		<?php endif; ?>
 
-<?php endwhile; ?>
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>

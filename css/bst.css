@@ -8,11 +8,14 @@
 .tertiary {
   background-color: #dbbfa5; }
 
-.cta, .introBlock a, .quotes a, #pricing-table .mepr-price-box-button a {
+.cta, #pricing-table .mepr-price-box-button a, .introBlock a, .quotes a {
   background-color: #b93207; }
 
-/*******    LAYOUT    *********************/
-.cta, .introBlock a, .quotes a, #pricing-table .mepr-price-box-button a {
+.boxed, .internal-page section {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+
+/* HEADER */
+.cta, #pricing-table .mepr-price-box-button a, .introBlock a, .quotes a {
   background: linear-gradient(to bottom, #e05d22 0%, #d94412 100%);
   border: none;
   border-bottom: 3px solid #b93207;
@@ -22,7 +25,7 @@
   padding: 11px 24px 10px;
   text-decoration: none;
   font-size: 18px; }
-  .cta:hover, .introBlock a:hover, .quotes a:hover, #pricing-table .mepr-price-box-button a:hover {
+  .cta:hover, #pricing-table .mepr-price-box-button a:hover, .introBlock a:hover, .quotes a:hover {
     background: #b93207; }
 
 .navbar {
@@ -60,37 +63,6 @@ h1.entry-title {
   font-weight: bold;
   line-height: 1.1; }
 
-.entry-summary p {
-  font-size: 18px;
-  line-height: 1.3;
-  margin-bottom: 0; }
-
-.entry-content {
-  font-size: 20px; }
-
-.entry-header {
-  margin-bottom: 0; }
-
-.site-main {
-  background: white;
-  overflow: hidden; }
-
-.masonry .site-content article {
-  padding: 0;
-  box-shadow: none; }
-
-.masonry h1.entry-title, .masonry p {
-  margin: 0 0.8rem; }
-
-.masonry h1.entry-title {
-  margin-top: 8px; }
-
-.masonry p {
-  margin-bottom: 8px; }
-
-.masonry .entry-thumbnail img {
-  margin: 0; }
-
 .nav-menu .sub-menu, .nav-menu .children {
   border: none; }
 
@@ -116,6 +88,40 @@ h1.entry-title {
     background: #ffc151;
     color: white; }
 
+.news .article {
+  padding: 0; }
+
+.entry-summary p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 0; }
+
+.entry-content {
+  font-size: 20px; }
+
+.entry-header {
+  margin-bottom: 0; }
+
+.site-main {
+  background: white;
+  overflow: hidden !important; }
+
+.masonry .site-content article {
+  padding: 0 !important;
+  box-shadow: none; }
+
+.masonry h1.entry-title, .masonry p {
+  margin: 0 0.8rem; }
+
+.masonry h1.entry-title {
+  margin-top: 8px; }
+
+.masonry p {
+  margin-bottom: 8px; }
+
+.masonry .entry-thumbnail img {
+  margin: 0; }
+
 .quotes {
   background: #FAF1DC;
   padding: 20px;
@@ -139,44 +145,24 @@ h1.entry-title {
     font-family: 'Droid Sans', sans-serif;
     margin-bottom: 1em; }
 
-.content-area {
-  padding-top: 40px; }
-
-.news {
-  position: relative; }
-
-.masonry .site-content {
-  margin: 0; }
-
-.intro {
-  background: #fdfaf4;
+#pricing-table {
   text-align: center;
-  overflow: hidden; }
-  .intro img {
-    margin-top: 70px; }
-  .intro > p {
-    font-size: 28px;
-    width: 70%;
-    margin: 0 auto 40px auto; }
-  .intro li {
-    font-size: 24px;
-    display: inline; }
-
-.aims {
-  text-align: left; }
-
-button {
-  padding: 10px 20px;
-  font-size: 24px; }
-
-img {
-  max-width: 100%; }
-
-.header-meta {
-  padding: 4px 24px; }
-
-.internal-page {
-  background: white; }
+  margin-bottom: 40px; }
+  #pricing-table .mepr-price-box-benefits-list div:nth-child(odd) {
+    background: #fcd5b3; }
+  #pricing-table .mepr-price-box {
+    background: #fef0e4;
+    padding: 0;
+    width: 20%;
+    margin-right: 24px; }
+  #pricing-table .mepr-price-box-benefits-item {
+    border-bottom: none;
+    font-weight: normal; }
+  #pricing-table .mepr-price-box-price {
+    font-size: 26px;
+    font-weight: normal; }
+  #pricing-table .mepr-price-box-title {
+    text-transform: uppercase; }
 
 /* FROM CODEPEN */
 .slider {
@@ -251,6 +237,49 @@ a.button {
 .main-cta {
   background: #b93207;
   color: white !important; }
+
+@media (min-width: 0) and (max-width: 768px) {
+  .partners {
+    text-align: center; } }
+
+.content-area {
+  padding-top: 40px; }
+
+.news {
+  position: relative; }
+
+.masonry .site-content {
+  margin: 0; }
+
+.intro {
+  background: #fdfaf4;
+  text-align: center;
+  overflow: hidden; }
+  .intro img {
+    margin-top: 70px; }
+  .intro > p {
+    font-size: 28px;
+    width: 70%;
+    margin: 0 auto 40px auto; }
+  .intro li {
+    font-size: 24px;
+    display: inline; }
+
+.aims {
+  text-align: left; }
+
+button {
+  padding: 10px 20px;
+  font-size: 24px; }
+
+img {
+  max-width: 100%; }
+
+.header-meta {
+  padding: 4px 24px; }
+
+.internal-page {
+  background: white; }
 
 .navbar {
   margin: 0 auto;
@@ -379,21 +408,31 @@ footer aside .widget {
 .paging-navigation .nav-next {
   padding: 0; }
 
-#pricing-table {
-  text-align: center;
-  margin-bottom: 40px; }
-  #pricing-table .mepr-price-box-benefits-list div:nth-child(odd) {
-    background: #fcd5b3; }
-  #pricing-table .mepr-price-box {
-    background: #fef0e4;
-    padding: 0;
-    width: 20%;
-    margin-right: 24px; }
-  #pricing-table .mepr-price-box-benefits-item {
-    border-bottom: none;
-    font-weight: normal; }
-  #pricing-table .mepr-price-box-price {
-    font-size: 26px;
-    font-weight: normal; }
-  #pricing-table .mepr-price-box-title {
-    text-transform: uppercase; }
+.internal-page {
+  background: #dbbfa5;
+  overflow: hidden; }
+  .internal-page section {
+    padding: 40px;
+    background: white;
+    width: 95%;
+    margin: 20px auto; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .internal-page section {
+        padding: 10px;
+        margin-top: 10px; } }
+  .internal-page img {
+    margin-bottom: 20px; }
+  .internal-page h1 {
+    background: #FFFCE2;
+    margin: 0;
+    font-weight: normal;
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+    font-style: italic; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .internal-page h1 {
+        font-size: 26px;
+        margin-bottom: 0px; } }
+  .internal-page .featured {
+    text-align: center; }

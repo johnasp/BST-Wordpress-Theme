@@ -1,0 +1,79 @@
+/* FROM CODEPEN */
+
+.slider {
+  background: url(/wp-content/uploads/2015/06/bloomfieldroad1800-926.jpg);
+  padding-bottom: 20px;
+}
+
+.bst-logo {
+  text-align: center;
+  margin: 40px auto;
+  width: 70%;
+}
+.bst-logo img {
+  max-width: 80%;
+}
+
+.introBlock {
+  background: white;
+  padding: 2em;
+  position: relative;
+  margin-bottom: 46px;
+  text-align: center;
+  background: rgba(255,255,255, 0.95);
+  a {
+    @extend .cta;
+    text-transform: uppercase;
+  }
+}
+.boxes svg {
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  display: block;
+  top: -40px;
+  fill: rgba(247, 132, 31, 1);
+}
+.boxes svg:nth-child(2) {
+  fill: white;
+  width: 44px;
+  height: 60px;
+  top: -30px;
+}
+.boxes p {
+  padding: 12px 0;
+  font-size: 22px;
+  line-height: 1.3;
+}
+.absCentre {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ #circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+a.button {
+  color: #b93207;
+  display: inline-block;
+  padding: 8px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #b93207;
+  text-transform: uppercase;
+}
+.solid {
+  color: #fff!important;
+  background: #b93207;
+}
+.main-cta {
+  background: #b93207;
+  color: white!important;
+}

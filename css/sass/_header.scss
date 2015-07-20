@@ -1,0 +1,85 @@
+/* HEADER */
+
+.cta {
+	background: linear-gradient(to bottom, #e05d22 0%, #d94412 100%);
+	border: none;
+	border-bottom: 3px solid #b93207;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	padding: 11px 24px 10px;
+	text-decoration: none;
+	font-size: 18px;
+	&:hover {
+		background: #b93207;
+	}
+}
+.navbar {
+	font-family: Helvetica, sans-serif;
+}
+@include breakpoint(mob) {
+	.navbar {
+		
+	}
+}
+.nav-menu li a {
+	font-size: 18px;
+	color: #000;
+}
+.widget {
+	background: #f1f1f1;
+}
+.widget-title {
+	font-weight: bold!important;
+}
+.home-link {
+	text-align: center;
+}
+.site-title {
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+h1.site-title  {
+	font-size: 56px!important;
+}
+.site-header .home-link {
+	max-width: none;
+}
+h1.entry-title {
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+.nav-menu .sub-menu, .nav-menu .children {
+	border: none;
+}
+.header-meta {
+	background: #232533;
+	overflow: hidden;
+	.bst-text {
+		display: inline-block;
+		text-decoration: none;
+		margin: 9px 0;
+		color: white;
+		font-size: 36px;
+		letter-spacing: 0;
+	}
+	.join {
+		float: right;
+		padding: 8px 16px;
+		border: 1px solid rgb(255, 193, 81);
+		color: rgb(255, 193, 81);
+		margin-top: 15px;
+		letter-spacing: 2px;
+	}
+	.join:hover {
+		text-decoration: none;
+		background: rgb(255, 193, 81);
+		color: white;
+	}
+}

@@ -1,0 +1,28 @@
+
+.quotes {
+	background: #FAF1DC;
+	padding: 20px;
+	text-align: center;
+	overflow: hidden;
+	h2 {
+		font-family: 'Droid Sans Mono';
+		padding: 0 0.6em;
+		font-size: 26px;
+		margin-bottom: 0;
+		color: black;
+	}
+	h2::before, h2::after  {
+		content: "\0022";
+	}
+	h3 {
+		margin-top: 10px;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgb(94, 68, 9);
+	}
+	p {
+		font-size: 18px;
+		font-family: 'Droid Sans', sans-serif;
+		margin-bottom: 1em;
+	}	
+}

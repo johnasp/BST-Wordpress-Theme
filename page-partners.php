@@ -5,26 +5,24 @@ Template Name: Partners
 ?>
 <?php get_header(); ?>
 
-	<div id="primary" class="content-area partners-page tertiary">
-		<div id="content" class="site-content" role="main">
-		
-					<?php if ( have_posts() ) : ?>
+	<div class="internal-page partners" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-							<?php while ( have_posts() ) : the_post(); ?>
-								<h1 class="entry-title"><?php the_title() ?></h1>
-								<?php the_content() ?>
+		<?php if ( have_posts() ) : ?>
 
-							<?php endwhile; ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<h1><?php the_title() ?></h1>
+				<section>
+					<div class="featured"><?php the_post_thumbnail('full'); ?></div>
+					<?php the_content() ?>
+				</section>
+			<?php endwhile; ?>
 
-					
-						<?php else : ?>
-							<?php get_template_part( 'content', 'none' ); ?>
-						<?php endif; ?>
-					</div>
-
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+		<?php endif; ?>
 
 
-		<?php
+<?php
 if ( get_query_var('paged') ) $paged = get_query_var('paged');  
 if ( get_query_var('page') ) $paged = get_query_var('page');
  
@@ -57,10 +55,8 @@ if ( $query->have_posts() ) : ?>
 	<!-- show 404 error here -->
 <?php endif; ?>
 
+	</div>
 
 
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>

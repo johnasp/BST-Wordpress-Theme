@@ -1,0 +1,5 @@
+.partners {
+	@include breakpoint(mob) {
+		text-align: center;
+	}
+}
