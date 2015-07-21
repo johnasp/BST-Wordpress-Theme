@@ -35,7 +35,7 @@
 	<div id="page" class="hfeed site">
 		<div class="header-meta">
 			<a href="/" class="bst-text">BLACKPOOL SUPPORTERS' TRUST</a>
-			<a href="/login" class="join">JOIN</a>
+			<a href="/login" class="join">JOIN US</a>
 		</div>
 		<header id="masthead" class="site-header" role="banner">
 

@@ -3,13 +3,13 @@
 $headFootBG: rgba(247, 132, 31, 1);
 $cta: rgba(247, 132, 31, 1);
 $tangerine: rgba(247, 132, 31, 1);
-$secondary: rgba(219, 191, 165, 1);
-$tertiary: #FFFCE2;
+$secondary: #FFFAF0;
+$tertiary: #FFDCBE;
 $tileBG: rgba(247, 132, 31, 1);
 
 .primary { background-color: rgba(247, 132, 31, 1);}
 .secondary { background-color: rgba(170, 85, 11, 1);}
-.tertiary { background-color: rgba(219, 191, 165, 1);}
+.tertiary { background-color: #FFDCBE;}
 .cta {background-color: #b93207;}
 
 .boxed {box-shadow: 0 0 3px rgba(0,0,0,.3);}
@@ -21,6 +21,7 @@ $tileBG: rgba(247, 132, 31, 1);
 @import "sass/_membership.scss";
 @import "sass/_home_intro";
 @import "sass/_partners";
+@import "sass/_sidebar";
 
 .content-area {
 	padding-top: 40px;
@@ -203,8 +204,14 @@ footer aside .widget {
 	padding: 0;
 }
 .internal-page {
-	background: $secondary;
+	background: $tertiary;
 	overflow: hidden;
+	.inner-content {
+		@include breakpoint(768) {
+			float: left;
+			width: 66%;
+		}
+	}
 	section {
 		@include breakpoint(mob) { 
 			padding: 10px;
@@ -228,11 +235,23 @@ footer aside .widget {
 			margin-bottom: 0px;
 		}
 		font-size: 36px;
-		padding: 20px;
+		padding-top: 20px;
 		text-align: center;
 		font-style: italic;
 	}
 	.featured {
 		text-align: center;
 	}
+}
+/* CLEAR FIX.  Just add .group to parent off floats you want to clear */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }

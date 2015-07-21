@@ -1,0 +1,33 @@
+.bst-sidebar {
+	display: block;
+	@include breakpoint(768) {
+		width: 30%;
+		display: inline-block;
+		float: right;
+	}
+	.widget {
+	background: lighten(#eaeaea, 5%)!important;
+}
+
+}
+aside.widget:nth-child(odd)  {
+	border-top: 5px rgba(247, 132, 31, 1) solid;
+}
+aside.widget:nth-child(even)  {
+	border-top: 5px rgba(170, 85, 11, 1)solid;
+}
+.widget-title {
+	font-style: normal!important;
+	text-align: center;
+}
+.textwidget {
+	text-align: center;
+	line-height: 1.4em;
+	margin-bottom: 10px;
+}
+.widget a, .widget li, .widget p {
+	font-size: 17px!important;
+}
+.textwidget a {
+	margin-top: 12px;
+}

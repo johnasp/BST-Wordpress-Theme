@@ -15,11 +15,7 @@
 
 if ( is_active_sidebar( 'sidebar-2' ) &&
 	 ! ( is_home() || is_archive() ) ) : ?>
-	<div id="tertiary" class="sidebar-container" role="complementary">
-		<div class="sidebar-inner">
-			<div class="widget-area">
+			<aside class="bst-sidebar">
 				<?php dynamic_sidebar( 'sidebar-2' ); ?>
-			</div><!-- .widget-area -->
-		</div><!-- .sidebar-inner -->
-	</div><!-- #tertiary -->
-<?php endif; ?>
+			</aside>
+<?php endif; ?>														

@@ -61,12 +61,13 @@ h1.entry-title {
 .header-meta {
 	background: #232533;
 	overflow: hidden;
+	padding: 0 20px!important;
 	.bst-text {
 		display: inline-block;
 		text-decoration: none;
 		margin: 9px 0;
 		color: white;
-		font-size: 36px;
+		font-size: 32px;
 		letter-spacing: 0;
 	}
 	.join {
@@ -74,7 +75,7 @@ h1.entry-title {
 		padding: 8px 16px;
 		border: 1px solid rgb(255, 193, 81);
 		color: rgb(255, 193, 81);
-		margin-top: 15px;
+		margin-top: 12px;
 		letter-spacing: 2px;
 	}
 	.join:hover {

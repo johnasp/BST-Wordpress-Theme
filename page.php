@@ -12,16 +12,21 @@ Template Name: BST page
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1><?php the_title() ?></h1>
-				<section>
-					<div class="featured"><?php the_post_thumbnail('full'); ?></div>
-					<?php the_content() ?>
+				<section  class="group">
+					<div class="inner-content">
+						<div class="featured"><?php the_post_thumbnail('full'); ?></div>
+						<?php the_content() ?>
+					</div>
+					<?php get_sidebar(); ?>
 				</section>
+				
 			<?php endwhile; ?>
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 
-	</div><!-- #primary -->
+
+	</div>	
 
 <?php get_footer(); ?>

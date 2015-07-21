@@ -6,7 +6,7 @@
   background-color: #aa550b; }
 
 .tertiary {
-  background-color: #dbbfa5; }
+  background-color: #FFDCBE; }
 
 .cta, #pricing-table .mepr-price-box-button a, .introBlock a, .quotes a {
   background-color: #b93207; }
@@ -68,20 +68,21 @@ h1.entry-title {
 
 .header-meta {
   background: #232533;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0 20px !important; }
   .header-meta .bst-text {
     display: inline-block;
     text-decoration: none;
     margin: 9px 0;
     color: white;
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 0; }
   .header-meta .join {
     float: right;
     padding: 8px 16px;
     border: 1px solid #ffc151;
     color: #ffc151;
-    margin-top: 15px;
+    margin-top: 12px;
     letter-spacing: 2px; }
   .header-meta .join:hover {
     text-decoration: none;
@@ -241,6 +242,37 @@ a.button {
 @media (min-width: 0) and (max-width: 768px) {
   .partners {
     text-align: center; } }
+
+.bst-sidebar {
+  display: block; }
+  @media (min-width: 768px) {
+    .bst-sidebar {
+      width: 30%;
+      display: inline-block;
+      float: right; } }
+  .bst-sidebar .widget {
+    background: #f7f7f7 !important; }
+
+aside.widget:nth-child(odd) {
+  border-top: 5px #f7841f solid; }
+
+aside.widget:nth-child(even) {
+  border-top: 5px #aa550b solid; }
+
+.widget-title {
+  font-style: normal !important;
+  text-align: center; }
+
+.textwidget {
+  text-align: center;
+  line-height: 1.4em;
+  margin-bottom: 10px; }
+
+.widget a, .widget li, .widget p {
+  font-size: 17px !important; }
+
+.textwidget a {
+  margin-top: 12px; }
 
 .content-area {
   padding-top: 40px; }
@@ -409,8 +441,12 @@ footer aside .widget {
   padding: 0; }
 
 .internal-page {
-  background: #dbbfa5;
+  background: #FFDCBE;
   overflow: hidden; }
+  @media (min-width: 768px) {
+    .internal-page .inner-content {
+      float: left;
+      width: 66%; } }
   .internal-page section {
     padding: 40px;
     background: white;
@@ -423,11 +459,11 @@ footer aside .widget {
   .internal-page img {
     margin-bottom: 20px; }
   .internal-page h1 {
-    background: #FFFCE2;
+    background: #FFDCBE;
     margin: 0;
     font-weight: normal;
     font-size: 36px;
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
     font-style: italic; }
     @media (min-width: 0) and (max-width: 768px) {
@@ -436,3 +472,16 @@ footer aside .widget {
         margin-bottom: 0px; } }
   .internal-page .featured {
     text-align: center; }
+
+/* CLEAR FIX.  Just add .group to parent off floats you want to clear */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
