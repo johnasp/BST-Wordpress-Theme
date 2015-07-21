@@ -1,28 +1,29 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
 
-get_header(); ?>
+<?php get_header(); ?>
 
-	<div id="primary" class="content-area internal-page">
-		<div id="content" class="site-content" role="main">
+	<div class="internal-page" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php /* The loop */ ?>
+		<?php if ( have_posts() ) : ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
+				<h1><?php the_title() ?></h1>
+				<section  class="group">
+					<div class="inner-content">
+						<div class="featured"><?php the_post_thumbnail('full'); ?></div>
+						<?php the_content(); ?>
+					</div>
+					<?php get_sidebar(); ?>
+					<?php twentythirteen_post_nav(); ?>
+				</section>
 
-				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php twentythirteen_post_nav(); ?>
-				<?php comments_template(); ?>
-
+				
 			<?php endwhile; ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+		<?php endif; ?>
 
-<?php get_sidebar(); ?>
+
+	</div>	
+
 <?php get_footer(); ?>
