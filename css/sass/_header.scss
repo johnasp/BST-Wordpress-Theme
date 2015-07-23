@@ -61,22 +61,41 @@ h1.entry-title {
 .header-meta {
 	background: #232533;
 	overflow: hidden;
-	padding: 0 20px!important;
+	padding: 0 20px;
+	position: relative;
+	@include breakpoint(mob) { 
+			padding-left: 4px!important;
+	}
 	.bst-text {
 		display: inline-block;
 		text-decoration: none;
-		margin: 9px 0;
+		margin: 0;
 		color: white;
-		font-size: 32px;
+		@include breakpoint(mob) {
+			font-size: 18px;
+			margin: 0 0 4px 0;
+		}
+		font-size: 36px;
 		letter-spacing: 0;
+		text-transform: uppercase;
 	}
 	.join {
 		float: right;
 		padding: 8px 16px;
+		@include breakpoint(mob) {
+			padding: 1px 6px;
+			margin-top: 0;
+			position: absolute;
+			top: 6px;
+			right: 2px;
+			font-size: 14px;
+
+		}
 		border: 1px solid rgb(255, 193, 81);
 		color: rgb(255, 193, 81);
-		margin-top: 12px;
-		letter-spacing: 2px;
+		margin-top: 4px;
+		text-transform: uppercase;
+
 	}
 	.join:hover {
 		text-decoration: none;

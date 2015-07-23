@@ -1,11 +1,13 @@
+
 /*******    COLOURS    *********************/
 
 $headFootBG: rgba(247, 132, 31, 1);
-$cta: rgba(247, 132, 31, 1);
+$cta: #ac0404;
 $tangerine: rgba(247, 132, 31, 1);
-$secondary: #FFFAF0;
-$tertiary: #FFDCBE;
-$tileBG: rgba(247, 132, 31, 1);
+$secondary: #dbbfa5; /* browny, */
+$tertiary: #FFDCBE; /* light orange, quotes */
+$greyBG: #eaeaea;
+
 
 .primary { background-color: rgba(247, 132, 31, 1);}
 .secondary { background-color: rgba(170, 85, 11, 1);}
@@ -22,13 +24,23 @@ $tileBG: rgba(247, 132, 31, 1);
 @import "sass/_home_intro";
 @import "sass/_partners";
 @import "sass/_sidebar";
+@import "sass/_single";
 
 .content-area {
 	padding-top: 40px;
 }
+.home-news {
+	background: $greyBG;
+	article {
+		@include breakpoint(mob) {
+			margin-bottom: 20px!important;	
+		}
+	}
+}
 .news {
 	position: relative;
 }
+
 .masonry .site-content {
 	margin: 0;
 }
@@ -82,27 +94,7 @@ img {
 .hentry {
 	padding: 0;
 }
-aside.widget:nth-child(odd)  {
-	border-top: 5px rgba(247, 132, 31, 1) solid;
-}
-aside.widget:nth-child(even)  {
-	border-top: 5px rgba(170, 85, 11, 1)solid;
-}
-.widget-title {
-	font-style: normal!important;
-	text-align: center;
-}
-.textwidget {
-	text-align: center;
-	line-height: 1.4em;
-	margin-bottom: 10px;
-}
-.widget a, .widget li, .widget p {
-	font-size: 17px!important;
-}
-.textwidget a {
-	margin-top: 12px;
-}
+
 .featured-image {
 	margin: 12px 0;
 }
@@ -192,9 +184,9 @@ footer aside .widget {
 	display: none;
 }
 .paging-navigation {
-	background: #DBBFA5;
+	background: $greyBG;
 	margin-bottom: 0;
-	padding: 30px 0 30px 0;
+	padding: 0 0 30px 0;
 }
 .nav-previous .meta-nav, .nav-next .meta-nav {
 	padding: 0!important;
@@ -204,7 +196,7 @@ footer aside .widget {
 	padding: 0;
 }
 .internal-page {
-	background: $tertiary;
+	background: $greyBG;
 	overflow: hidden;
 	.inner-content {
 		@include breakpoint(768) {
@@ -227,12 +219,11 @@ footer aside .widget {
 		margin-bottom: 20px;
 	}
 	h1 {
-		background: $tertiary;
 		margin: 0;
 		font-weight: normal;
 		@include breakpoint(mob) {
-			font-size: 26px;
-			margin-bottom: 0px;
+			font-size: 30px;
+			margin-bottom: 16px;
 		}
 		font-size: 36px;
 		padding-top: 20px;
@@ -243,6 +234,10 @@ footer aside .widget {
 		text-align: center;
 	}
 }
+#primary {
+	overflow: hidden;
+}
+
 /* CLEAR FIX.  Just add .group to parent off floats you want to clear */
 .group:before,
 .group:after {

@@ -34,8 +34,8 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<div class="header-meta">
-			<a href="/" class="bst-text">BLACKPOOL SUPPORTERS' TRUST</a>
-			<a href="/login" class="join">JOIN US</a>
+			<a href="/" class="bst-text">Blackpool Supporters' Trust</a>
+			<a href="/login" class="join">Join</a>
 		</div>
 		<header id="masthead" class="site-header" role="banner">
 

@@ -1,4 +1,6 @@
 /*******    COLOURS    *********************/
+/* browny, */
+/* light orange, quotes */
 .primary {
   background-color: #f7841f; }
 
@@ -69,21 +71,38 @@ h1.entry-title {
 .header-meta {
   background: #232533;
   overflow: hidden;
-  padding: 0 20px !important; }
+  padding: 0 20px;
+  position: relative; }
+  @media (min-width: 0) and (max-width: 768px) {
+    .header-meta {
+      padding-left: 4px !important; } }
   .header-meta .bst-text {
     display: inline-block;
     text-decoration: none;
-    margin: 9px 0;
+    margin: 0;
     color: white;
-    font-size: 32px;
-    letter-spacing: 0; }
+    font-size: 36px;
+    letter-spacing: 0;
+    text-transform: uppercase; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .header-meta .bst-text {
+        font-size: 18px;
+        margin: 0 0 4px 0; } }
   .header-meta .join {
     float: right;
     padding: 8px 16px;
     border: 1px solid #ffc151;
     color: #ffc151;
-    margin-top: 12px;
-    letter-spacing: 2px; }
+    margin-top: 4px;
+    text-transform: uppercase; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .header-meta .join {
+        padding: 1px 6px;
+        margin-top: 0;
+        position: absolute;
+        top: 6px;
+        right: 2px;
+        font-size: 14px; } }
   .header-meta .join:hover {
     text-decoration: none;
     background: #ffc151;
@@ -124,7 +143,7 @@ h1.entry-title {
   margin: 0; }
 
 .quotes {
-  background: #FAF1DC;
+  background: #FFDCBE;
   padding: 20px;
   text-align: center;
   overflow: hidden; }
@@ -146,6 +165,36 @@ h1.entry-title {
     font-family: 'Droid Sans', sans-serif;
     margin-bottom: 1em; }
 
+.membership .inner-content {
+  width: 100% !important;
+  float: none; }
+.membership .mp_wrapper {
+  width: 100% !important; }
+
+.join .inner-content {
+  width: 100% !important; }
+
+#member-signup, #my-account {
+  text-align: center; }
+  #member-signup .mp_wrapper, #my-account .mp_wrapper {
+    text-align: center;
+    max-width: 100% !important; }
+  #member-signup .mp_wrapper form, #my-account .mp_wrapper form {
+    text-align: center; }
+
+#my-account .inner {
+  width: 70%;
+  margin: 0 auto; }
+  @media (min-width: 0) and (max-width: 768px) {
+    #my-account .inner {
+      width: 100%; } }
+#my-account #mepr_account_form {
+  width: 70%;
+  margin: 0 auto; }
+  @media (min-width: 0) and (max-width: 768px) {
+    #my-account #mepr_account_form {
+      width: 90%; } }
+
 #pricing-table {
   text-align: center;
   margin-bottom: 40px; }
@@ -154,16 +203,31 @@ h1.entry-title {
   #pricing-table .mepr-price-box {
     background: #fef0e4;
     padding: 0;
-    width: 20%;
+    margin-bottom: 20px;
+    width: 22%;
     margin-right: 24px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      #pricing-table .mepr-price-box {
+        width: 100%; } }
+    #pricing-table .mepr-price-box:last-child {
+      margin-right: 0; }
   #pricing-table .mepr-price-box-benefits-item {
     border-bottom: none;
     font-weight: normal; }
   #pricing-table .mepr-price-box-price {
-    font-size: 26px;
-    font-weight: normal; }
-  #pricing-table .mepr-price-box-title {
-    text-transform: uppercase; }
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0; }
+
+.mepr-nav-item a {
+  background-color: #717171;
+  color: white;
+  padding: 8px;
+  text-decoration: none; }
+
+.mepr-active-nav-tab a {
+  background: #ac0404;
+  font-weight: normal; }
 
 /* FROM CODEPEN */
 .slider {
@@ -274,8 +338,29 @@ aside.widget:nth-child(even) {
 .textwidget a {
   margin-top: 12px; }
 
+.pagination a {
+  display: block;
+  margin-bottom: 12px; }
+  @media (min-width: 1024px) {
+    .pagination a {
+      display: inline; } }
+  .pagination a[rel=next] {
+    float: left; }
+  .pagination a[rel=prev] {
+    float: right; }
+.pagination svg {
+  width: 15px;
+  height: 15px;
+  display: block; }
+
 .content-area {
   padding-top: 40px; }
+
+.home-news {
+  background: #eaeaea; }
+  @media (min-width: 0) and (max-width: 768px) {
+    .home-news article {
+      margin-bottom: 20px !important; } }
 
 .news {
   position: relative; }
@@ -326,27 +411,6 @@ img {
 
 .hentry {
   padding: 0; }
-
-aside.widget:nth-child(odd) {
-  border-top: 5px #f7841f solid; }
-
-aside.widget:nth-child(even) {
-  border-top: 5px #aa550b solid; }
-
-.widget-title {
-  font-style: normal !important;
-  text-align: center; }
-
-.textwidget {
-  text-align: center;
-  line-height: 1.4em;
-  margin-bottom: 10px; }
-
-.widget a, .widget li, .widget p {
-  font-size: 17px !important; }
-
-.textwidget a {
-  margin-top: 12px; }
 
 .featured-image {
   margin: 12px 0; }
@@ -429,9 +493,9 @@ footer aside .widget {
   display: none; }
 
 .paging-navigation {
-  background: #DBBFA5;
+  background: #eaeaea;
   margin-bottom: 0;
-  padding: 30px 0 30px 0; }
+  padding: 0 0 30px 0; }
 
 .nav-previous .meta-nav, .nav-next .meta-nav {
   padding: 0 !important;
@@ -441,7 +505,7 @@ footer aside .widget {
   padding: 0; }
 
 .internal-page {
-  background: #FFDCBE;
+  background: #eaeaea;
   overflow: hidden; }
   @media (min-width: 768px) {
     .internal-page .inner-content {
@@ -459,7 +523,6 @@ footer aside .widget {
   .internal-page img {
     margin-bottom: 20px; }
   .internal-page h1 {
-    background: #FFDCBE;
     margin: 0;
     font-weight: normal;
     font-size: 36px;
@@ -468,10 +531,13 @@ footer aside .widget {
     font-style: italic; }
     @media (min-width: 0) and (max-width: 768px) {
       .internal-page h1 {
-        font-size: 26px;
-        margin-bottom: 0px; } }
+        font-size: 30px;
+        margin-bottom: 16px; } }
   .internal-page .featured {
     text-align: center; }
+
+#primary {
+  overflow: hidden; }
 
 /* CLEAR FIX.  Just add .group to parent off floats you want to clear */
 .group:before,

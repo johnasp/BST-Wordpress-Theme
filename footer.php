@@ -1,18 +1,24 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains footer content and the closing of the #main and #page div elements.
- * 
- * Blogsonry: Modified to hide "Generated" content
- *
- * @package WordPress
- * @subpackage Blogsonry
- * @since Blogsonry 1.0
- */
-?>
+
 
 		</div><!-- #main -->
+
+			<div class="quotes">
+				<?php 
+					$quotes = new WP_Query('post_type=quotes&orderby=rand&posts_per_page=1');
+					while($quotes->have_posts()) : $quotes->the_post();
+						echo "<h2>";
+						the_field('quote_text');
+						echo "</h2>";
+						echo "<h3>";
+						the_field('quote_author');
+						echo "</h3>";
+
+
+					endwhile;
+					wp_reset_postdata();
+				?>
+				<a href="/join/">Become a Member</a>
+			</div>
 		<footer id="colophon" class="site-footer clear" role="contentinfo">
 			<?php get_sidebar( 'main' ); ?>
 		</footer><!-- #colophon -->

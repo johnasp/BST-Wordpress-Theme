@@ -1,0 +1,16 @@
+.pagination {
+	a {
+		display: block;
+		@include breakpoint(1024) {
+			display: inline;
+		}
+		margin-bottom: 12px;
+		&[rel=next] {float: left;}
+		&[rel=prev] {float: right;}
+	}
+	svg {
+		width: 15px;
+		height: 15px;
+		display: block;
+	}
+}

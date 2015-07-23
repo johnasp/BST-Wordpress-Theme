@@ -20,7 +20,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area internal-page">
-		<div id="content" class="site-content" role="main">
+		<div class="site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
