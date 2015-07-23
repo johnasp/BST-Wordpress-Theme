@@ -3,7 +3,7 @@
 
 <section class="slider container-fluid">
   <div class="bst-logo">
-  <img src="wp-content/uploads/2015/06/bst-logo.png" alt="" /></div>
+  <img src="/wp-content/uploads/2015/06/bst-logo.png" alt="" /></div>
   <div class="boxes row">
 
         <div class="who col-md-4">
