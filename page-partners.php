@@ -44,7 +44,7 @@ if ( $query->have_posts() ) : ?>
 				<div class="col-md-4">
 					<div>
 						<h3 class="member-benefits">Member benefits</h3>
-						<?php echo get_field("partner_description"); ?>
+						<?php echo get_field("partner_benefits"); ?>
 					</div>
 				</div>
 			</article>

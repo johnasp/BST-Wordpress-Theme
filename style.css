@@ -1,17 +1,12 @@
 @import url('css/bst.css');
 
 /*
-Theme Name: Blogsonry
-Author: Mark Root-Wiley / MRW Web Design
-Author URI: http://MRWweb.com
+Theme Name: BST
+Author: John Aspinall
+Author URI: http://johnaspinall.co.uk
 Description: A child theme of Twenty Thirteen with a masonry layout on the blog and archive pages. Just like Twenty Thirteen, this theme really makes Post Formats shine. Supports Jetpack Infinite Scroll (and responsive videos) if Jetpack is installed and Infinite Scroll Module is enabled. Behind the scenes, this updates Twenty Thirteen to Masonry 3 while we're at it. Originally designed & developed for FoodCorps.
 Version: 1.0.5
 Template: twentythirteen
-
-Blogsonry Copyright (C) 2014 Mark Root-Wiley
-Blogsonry, like WordPress, is licensed and distributed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
 
 /****************************************************************
  * Minor Layout Tweaks
