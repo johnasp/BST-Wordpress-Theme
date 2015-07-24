@@ -539,6 +539,11 @@ footer aside .widget {
 #primary {
   overflow: hidden; }
 
+#category .site-content {
+  margin: 0; }
+#category .archive-title {
+  max-width: 100%; }
+
 /* CLEAR FIX.  Just add .group to parent off floats you want to clear */
 .group:before,
 .group:after {

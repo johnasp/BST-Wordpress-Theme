@@ -93,14 +93,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_fonts.scss": {
+	"\/css\/Sass\/_fonts.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_fonts.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_fonts.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_fonts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -109,14 +109,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_footer.scss": {
+	"\/css\/Sass\/_footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_footer.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_footer.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -125,14 +125,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_header.scss": {
+	"\/css\/Sass\/_header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_header.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_header.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -141,14 +141,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_home_intro.scss": {
+	"\/css\/Sass\/_home_intro.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_home_intro.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_home_intro.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_home_intro.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -157,14 +157,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_home_news.scss": {
+	"\/css\/Sass\/_home_news.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_home_news.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_home_news.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_home_news.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -173,14 +173,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_membership.scss": {
+	"\/css\/Sass\/_membership.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_membership.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_membership.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_membership.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -189,14 +189,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_mq.scss": {
+	"\/css\/Sass\/_mq.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_mq.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_mq.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_mq.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -205,14 +205,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_partners.scss": {
+	"\/css\/Sass\/_partners.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_partners.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_partners.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_partners.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -221,14 +221,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_quotes.scss": {
+	"\/css\/Sass\/_quotes.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_quotes.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_quotes.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_quotes.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -237,14 +237,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_sidebar.scss": {
+	"\/css\/Sass\/_sidebar.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_sidebar.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_sidebar.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_sidebar.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -253,14 +253,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/sass\/_single.scss": {
+	"\/css\/Sass\/_single.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/_single.scss",
+		"inputAbbreviatedPath": "\/css\/Sass\/_single.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_single.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,

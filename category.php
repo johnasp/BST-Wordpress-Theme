@@ -11,10 +11,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area internal-page">
-		<div id="content" class="site-content" role="main">
+	<div id="category" class="content-area internal-page">
+		<div class="site-content" role="main">
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
+			<header>
 				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
 
 				<?php if ( category_description() ) : // Show an optional category description ?>
