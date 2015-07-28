@@ -4,8 +4,10 @@
     float: none;
   }
   .mp_wrapper {
-    width: 100%!important;
-
+ 
+    .mp-form-row {
+      width: 40%;
+    }
   }
 }
 .join .inner-content {
@@ -28,50 +30,56 @@
     @include breakpoint(mob) {
       width: 100%;  
     }
-    width: 70%;
+ 
     margin: 0 auto;
   }
   #mepr_account_form {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     @include breakpoint(mob) {
       width: 90%;  
     }
-
+  }
+  .mepr-login-form-wrap {
+    @include breakpoint(mob) {
+      width: 80%;      
+    }
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
 #pricing-table {
-  text-align: center; 
-  margin-bottom: 40px;
-  .mepr-price-box-benefits-list div:nth-child(odd) {
-    background: lighten($tangerine,30%);
-  }
-  .mepr-price-box {
-    background: lighten($tangerine,40%);
-    padding: 0;
-     margin-bottom: 20px;
-    @include breakpoint(mob) {
-      width: 100%;
+  .mepr-price-menu  {
+    text-align: center; 
+    margin-bottom: 40px;
+    .mepr-price-box-benefits-list div:nth-child(odd) {
+      background: lighten($tangerine,30%);
     }
-    width: 22%;
-    margin-right: 24px;
-    &:last-child {margin-right:0;}
-  }
-  .mepr-price-box-benefits-item {
-    border-bottom: none;
-    font-weight: normal;
-  }
-  .mepr-price-box-button a {
-    @extend .cta;
-  }
-  .mepr-price-box-price {
-    font-size: 24px;
-    font-weight: normal;
-    margin-top: 0;
-  }
-  .mepr-price-box-title {
-   
+    .mepr-price-box {
+      background: lighten($tangerine,40%);
+      padding: 0;
+       margin-bottom: 20px;
+      @include breakpoint(mob) {
+        width: 100%;
+      }
+      width: 22%;
+      margin-right: 24px;
+      &:last-child {margin-right:0;}
+    }
+    .mepr-price-box-benefits-item {
+      border-bottom: none;
+      font-weight: normal;
+    }
+    .mepr-price-box-button a {
+      @extend .cta;
+    }
+    .mepr-price-box-price {
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 0;
+    }
   }
 }
 

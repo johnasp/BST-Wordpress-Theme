@@ -1,7 +1,7 @@
 
 
 		</div><!-- #main -->
-
+			<h2 class="quoteHead"></h2>
 			<div class="quotes">
 				<?php 
 					$quotes = new WP_Query('post_type=quotes&orderby=rand&posts_per_page=1');
@@ -22,6 +22,7 @@
 		<footer id="colophon" class="site-footer clear" role="contentinfo">
 			<?php get_sidebar( 'main' ); ?>
 		</footer><!-- #colophon -->
+
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>

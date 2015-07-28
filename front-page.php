@@ -39,6 +39,7 @@
 <!-- MASONRY NEWS -->
 
 <div id="primary" class="content-area home-news">
+  <h2> Latest News </h2>
 	<div id="content" class="site-content">
 		<div class="news">
 
@@ -62,5 +63,5 @@
 
 			<?php twentythirteen_paging_nav(); ?>
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

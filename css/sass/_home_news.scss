@@ -1,4 +1,14 @@
 // HOME NEWS
+.home-news {
+  h2 {
+    margin: 0;
+    background: darken(#a3a3a3, 20%);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+  }
+}
 
 .news {
   .article {

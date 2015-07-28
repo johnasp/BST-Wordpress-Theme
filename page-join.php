@@ -13,7 +13,7 @@ Template Name: Join
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1><?php the_title() ?></h1>
 				<section  class="group">
-					<div class="inner-content">
+					<div id="pricing-table" class="inner-content">
 						<div class="featured"><?php the_post_thumbnail('full'); ?></div>
 						<?php the_content() ?>
 					</div>

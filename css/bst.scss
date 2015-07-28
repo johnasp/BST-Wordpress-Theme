@@ -4,8 +4,8 @@
 $headFootBG: rgba(247, 132, 31, 1);
 $cta: #ac0404;
 $tangerine: rgba(247, 132, 31, 1);
-$secondary: #dbbfa5; /* browny, */
-$tertiary: #FFDCBE; /* light orange, quotes */
+$secondary: #aa550b; /* browny, */
+$tertiary: lighten(#f7841f, 25%); /* light orange, quotes */
 $greyBG: #eaeaea;
 
 
@@ -25,10 +25,9 @@ $greyBG: #eaeaea;
 @import "sass/_partners";
 @import "sass/_sidebar";
 @import "sass/_single";
+@import "sass/_footer";
 
-.content-area {
-	padding-top: 40px;
-}
+
 .home-news {
 	background: $greyBG;
 	article {
