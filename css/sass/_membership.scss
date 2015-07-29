@@ -26,6 +26,12 @@
 }
 
 #my-account {
+  section {
+    background: url("/wp-content/themes/bst/img/blackpoolplayoffs.jpg");
+  }
+  p, label {
+    color: white;
+  }
   .inner {
     @include breakpoint(mob) {
       width: 100%;  
@@ -34,8 +40,9 @@
     margin: 0 auto;
   }
   #mepr_account_form {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
+
     @include breakpoint(mob) {
       width: 90%;  
     }
@@ -48,17 +55,19 @@
     text-align: center;
     margin: 0 auto;
   }
+  #mepr-account-nav {
+    line-height: 3;
+  }
 }
 
 #pricing-table {
   .mepr-price-menu  {
     text-align: center; 
-    margin-bottom: 40px;
     .mepr-price-box-benefits-list div:nth-child(odd) {
-      background: lighten($tangerine,30%);
+      background: rgba(252, 213, 179, 0.5);
     }
     .mepr-price-box {
-      background: lighten($tangerine,40%);
+      background: rgba(254, 240, 228, 0.8);
       padding: 0;
        margin-bottom: 20px;
       @include breakpoint(mob) {
@@ -85,10 +94,12 @@
 
 .mepr-nav-item {
   a {
-    background-color: #717171;
+    background-color: #f7841f;
     color: white;
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
+    font-size: 16px!important;
+    border-radius: 3px;
     &:hover {
 
     }
@@ -98,5 +109,10 @@
   a {
     background: $cta;
     font-weight: normal;
+  }
+}
+#join {
+  section {
+    background: url("/wp-content/themes/bst/img/blackpool-1953-fa-cup.jpg") repeat;
   }
 }

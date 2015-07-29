@@ -6,7 +6,7 @@ Template Name: Join
 
 <?php get_header(); ?>
 
-	<div class="internal-page join" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div id="join" class="internal-page join" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<?php if ( have_posts() ) : ?>
 

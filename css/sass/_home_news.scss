@@ -2,11 +2,11 @@
 .home-news {
   h2 {
     margin: 0;
-    background: darken(#a3a3a3, 20%);
-    color: white;
+    background: #D8D8D8;
+    color: rgba(6, 6, 6, 0.58);
     text-align: center;
     padding: 10px 0;
-    
+    font-size: 24px;    
   }
 }
 
@@ -16,12 +16,9 @@
   }
 }
 .entry-summary p {
-  font-size: 18px;
+  font-size: $fontSize;
   line-height: 1.3;
   margin-bottom: 0;
-}
-.entry-content {
-  font-size: 20px;
 }
 .entry-header {
   margin-bottom: 0;
@@ -45,4 +42,7 @@
 } 
 .masonry .entry-thumbnail img {
   margin: 0;
+}
+.entry-title {
+  font: none;
 }

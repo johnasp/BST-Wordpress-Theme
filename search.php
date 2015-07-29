@@ -23,9 +23,7 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title">Your search results : </h1>
-			</header>
+			<h1>Your search results:</h1>
 
 			<section class="search-results archive-meta">
 			<?php /* The loop */ ?>

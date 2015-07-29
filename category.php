@@ -11,30 +11,28 @@
 
 get_header(); ?>
 
-	<div id="category" class="content-area internal-page">
-		<div class="site-content" role="main">
-		<?php if ( have_posts() ) : ?>
-			<header>
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
+<div id="primary" class="content-area home-news">
+  <h2> News Archives : <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></h2>
+	<div id="content" class="site-content">
+		<div class="news">
 
-				<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-				<?php endif; ?>
-			</header><!-- .archive-header -->
+			<?php if ( have_posts() ) : ?>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+				<?php endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+		
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
+		</div>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+	</div><!-- #content -->
+</div><!-- #primary -->
+
+<?php twentythirteen_paging_nav(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

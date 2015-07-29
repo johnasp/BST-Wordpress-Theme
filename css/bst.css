@@ -110,21 +110,19 @@ h1.entry-title {
 
 .home-news h2 {
   margin: 0;
-  background: #707070;
-  color: white;
+  background: #D8D8D8;
+  color: rgba(6, 6, 6, 0.58);
   text-align: center;
-  padding: 10px 0; }
+  padding: 10px 0;
+  font-size: 24px; }
 
 .news .article {
   padding: 0; }
 
 .entry-summary p {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.3;
   margin-bottom: 0; }
-
-.entry-content {
-  font-size: 20px; }
 
 .entry-header {
   margin-bottom: 0; }
@@ -148,6 +146,9 @@ h1.entry-title {
 
 .masonry .entry-thumbnail img {
   margin: 0; }
+
+.entry-title {
+  font: none; }
 
 .quotes {
   background: #fbc89a;
@@ -189,13 +190,17 @@ h1.entry-title {
   #member-signup .mp_wrapper form, #my-account .mp_wrapper form {
     text-align: center; }
 
+#my-account section {
+  background: url("/wp-content/themes/bst/img/blackpoolplayoffs.jpg"); }
+#my-account p, #my-account label {
+  color: white; }
 #my-account .inner {
   margin: 0 auto; }
   @media (min-width: 0) and (max-width: 768px) {
     #my-account .inner {
       width: 100%; } }
 #my-account #mepr_account_form {
-  width: 60%;
+  width: 40%;
   margin: 0 auto; }
   @media (min-width: 0) and (max-width: 768px) {
     #my-account #mepr_account_form {
@@ -207,14 +212,15 @@ h1.entry-title {
   @media (min-width: 0) and (max-width: 768px) {
     #my-account .mepr-login-form-wrap {
       width: 80%; } }
+#my-account #mepr-account-nav {
+  line-height: 3; }
 
 #pricing-table .mepr-price-menu {
-  text-align: center;
-  margin-bottom: 40px; }
+  text-align: center; }
   #pricing-table .mepr-price-menu .mepr-price-box-benefits-list div:nth-child(odd) {
-    background: #fcd5b3; }
+    background: rgba(252, 213, 179, 0.5); }
   #pricing-table .mepr-price-menu .mepr-price-box {
-    background: #fef0e4;
+    background: rgba(254, 240, 228, 0.8);
     padding: 0;
     margin-bottom: 20px;
     width: 22%;
@@ -233,14 +239,19 @@ h1.entry-title {
     margin-top: 0; }
 
 .mepr-nav-item a {
-  background-color: #717171;
+  background-color: #f7841f;
   color: white;
-  padding: 8px;
-  text-decoration: none; }
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px !important;
+  border-radius: 3px; }
 
 .mepr-active-nav-tab a {
   background: #ac0404;
   font-weight: normal; }
+
+#join section {
+  background: url("/wp-content/themes/bst/img/blackpool-1953-fa-cup.jpg") repeat; }
 
 /* FROM CODEPEN */
 .slider {
@@ -382,6 +393,9 @@ aside.widget:nth-child(even) {
 .news {
   position: relative; }
 
+.widget {
+  font-size: 18px; }
+
 .masonry .site-content {
   margin: 0; }
 
@@ -442,9 +456,6 @@ img {
   list-style-type: square;
   margin-left: 12px; }
 
-.archive #content {
-  background: #dbbfa5; }
-
 .archive .content-area, .search .content-area {
   padding-top: 0;
   padding-bottom: 0; }
@@ -484,7 +495,10 @@ img {
 .the-date {
   color: #999;
   padding-left: 12px;
-  font-size: 18px; }
+  font-size: 19px; }
+
+.single p, .single a, .single li, .page p, .page a, .page li {
+  font-size: 19px; }
 
 .main-navigation {
   max-width: none; }
@@ -573,3 +587,6 @@ footer aside .widget {
 .group {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
+
+.internal-page section {
+  margin-bottom: 40px; }
